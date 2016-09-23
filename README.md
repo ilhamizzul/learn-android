@@ -5,9 +5,9 @@ jenjang waktu peminjaman, serta jenjang umur anda yang terdiri dari tiga kriteri
 
 kegunaan dari aplikasi ini adalah untuk memudahkan bagi karyawan perpustakaan untuk mendata buku serta melihat berapa banyak peminjaman dalam waktu sebulan.
 
-![Screenshot](https://github.com/ilhamizzul/ilhamizzul/blob/master/Screenshot%201.JPG?raw=true)
-![Screenshot](https://github.com/ilhamizzul/ilhamizzul/blob/master/Screenshot%202.JPG?raw=true)
-![Screenshot](https://github.com/ilhamizzul/ilhamizzul/blob/master/Screenshot%203.JPG?raw=true)
+![Screenshot](https://raw.githubusercontent.com/ilhamizzul/ilhamizzul/master/screenshot%201.JPG)
+![Screenshot](https://raw.githubusercontent.com/ilhamizzul/ilhamizzul/master/screenshot%202.JPG)
+![Screenshot](https://raw.githubusercontent.com/ilhamizzul/ilhamizzul/master/screenshot%203.JPG)
 #Link
 https://github.com/ilhamizzul/ilhamizzul/releases
 # ilhamizzulHadyan_XI RPL 2_10_4724/1443.070_SMK TELKOM MALANG  
