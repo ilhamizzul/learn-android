@@ -43,20 +43,21 @@ public class MainActivity extends AppCompatActivity {
                 doClick();
             }
         });
-        int nTrip;
     }
 
     private void doClick() {
         String nama = etNama.getText().toString();
         String nomor = etNomor.getText().toString();
-        String hasil = null;
-        String trip = "\nPerjalanan ke  ";
-        int startlen = trip.length();
+        String jenis = "\n";
+        String hasil = "\nPerjalanan ke  ";
 
-        if (cbTM.isChecked()) trip += cbTM.getText() + "\n";
-        if (cbYN.isChecked()) trip += cbYN.getText() + "\n";
-        if (cbAF.isChecked()) trip += cbAF.getText() + "\n";
-        if (trip.length() == startlen) trip += "Tidak ada Pada Pilihan";
+        int startlen = hasil.length();
+
+        if (cbTM.isChecked()) hasil += cbTM.getText() + ",";
+        if (cbYN.isChecked()) hasil += cbYN.getText() + ",";
+        if (cbAF.isChecked()) hasil += cbAF.getText() + ",";
+        if (hasil.length() == startlen) hasil += "Tidak ada Pada Pilihan";
+
         if (nama.isEmpty()) {
             etNama.setError("Nama Belum di Isi");
         } else {
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         if (rgLR.getCheckedRadioButtonId() != -1) {
             RadioButton rb = (RadioButton)
                     findViewById(rgLR.getCheckedRadioButtonId());
-            hasil = rb.getText().toString();
+            jenis = rb.getText().toString();
         }
 //        if(rbLK.isChecked()){
 //            hasil = rbLK.getText().toString();
@@ -81,12 +82,12 @@ public class MainActivity extends AppCompatActivity {
 //        else if(rbPR.isChecked()){
 //            hasil = rbPR.getText().toString();
 //        }
-        if (hasil == null) {
-            tvHasil.setText("Apa Jenis Kelamin Anda ?");
-        } else {
-            tvHasil.setText("\nJenis Kelamin      : " + hasil);
-        }
+//        if (jenis == null) {
+//            tvHasil.setText("Apa Jenis Kelamin Anda ?");
+//        } else {
+//            tvHasil.setText("Jenis Kelamin      : " + jenis);
+//        }
 
-        tvHasil.setText("Nama           : " + nama + "\nNomor Identitas     : " + nomor + "\nJenis Kelamin    :" + "\nTransportasi yang di Pilih " + spPaket.getSelectedItem().toString());
+        tvHasil.setText("Nama           : " + nama + "\nNomor Identitas     : " + nomor +  "\nTransportasi yang di Pilih " + spPaket.getSelectedItem().toString()+hasil+"\nJenis Kelamin "+jenis);
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="paket">
-        <item>Pesawat</item>
-        <item>Bis</item>
-        <item>Travel</item>
+        <item>Anak</item>
+        <item>Remaja</item>
+        <item>Dewasa</item>
     </string-array>
 </resources>
